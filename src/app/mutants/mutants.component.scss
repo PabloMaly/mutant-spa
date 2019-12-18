@@ -1,0 +1,16 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.navbar {
+    strong {
+        margin-left: 5px;
+    }
+}
+
+.jumbotron {
+    height: 40vw;
+
+    .dna-container {
+        margin: 10% auto;
+        width: 45%;
+    }
+}

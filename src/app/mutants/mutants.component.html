@@ -1,0 +1,29 @@
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <i class="fas fa-male"></i>
+            <strong> Mutants</strong>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="jumbotron text-center">
+    <div class="container dna-container">
+      <h1>Search DNA</h1>
+    <form #userlogin = "ngForm" (ngSubmit)="isMutant (userlogin.value)"> 
+        <div class="input-group">
+                <input type="text" class="form-control" name="dna" ngModel>
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        <div [ngClass]="{'text-danger': errormsg}"> {{ statusDNA }} </div>
+    </form>
+    </div>
+  </section>
+  <footer class="text-muted">
+    <div class="container">
+      <p><a href="https://www.colonseguros.com.ar/">Colon</a> Developer Challenge </p>
+    </div>
+  </footer>
