@@ -20,6 +20,7 @@ constructor( protected txService: MutantService ) { }
         this.txService.getUsers(dataform)
         .subscribe(
           data => { // Success
+            this.errormsg = false;
             this.statusDNA = data;
           },
           (error) => { // error
