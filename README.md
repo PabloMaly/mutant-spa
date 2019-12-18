@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to start the app
 
-1) Run `ng serve`
-2) Run xampp (or other) and start mysql
-3) Create the database (In the other repo)
-4) Run `npm run start`
+1) Run `npm install`
+2) Run `ng serve`
+3) Run xampp (or other) and start mysql
+4) Create the database (In the other repo for more info)
 
 ## Development server
 
